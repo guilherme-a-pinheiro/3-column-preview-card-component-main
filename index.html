@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | 3-column preview card component</title>
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Lexend+Deca">
+  <!-- <link rel="stylesheet" href="https://fonts.google.com/specimen/Big+Shoulders+Display"> -->
+  <style>
+    @font-face {
+      font-family: Lexend Deca;
+      src: url(/fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+      weight: 400;
+    }
+
+    /* @font-face {
+      font-family: Big Shoulder Display;
+      src: url('https://fonts.google.com/specimen/Big+Shoulders+Display'); */
+    /* } */
+
+    * {
+      font-family: 'Lexend Deca', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main-container {
+      width: 65%;
+      height: 70vh;
+      display: flex;
+    }
+    
+    .main-container div {
+      padding: 37px;
+    }
+
+    footer {
+      margin-top: 100px;
+    }
+
+    a {
+      text-decoration: none;
+      display: flex;
+      width: 90px;
+      text-decoration: none;
+      background-color: red;
+      text-align: center;
+      padding: 12px 25px;
+      border-radius: 30px;
+      border: 2px solid #fff;
+    }
+
+    p {
+      margin-top: 20px;
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+
+    div, footer a {
+      color: #fff;
+    }
+
+    div .sedans, div .sedans a {
+      background-color: hsl(31, 77%, 52%);
+    }
+
+    div .suvs, div.suvs a {
+      background-color: hsl(184, 100%, 22%);
+    }
+
+    div .luxury, div .luxury a {
+      background-color: hsl(179, 100%, 13%);
+    }
+
+    div .sedans {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    div .luxury {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    div h2 {
+      text-transform: uppercase;
+      font-size: 28px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+  <div class="sedans">
+  <img src="images/icon-sedans.svg" alt="" class="sedans">
+  <h2>Sedans</h2>
+  <p>
+    Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+    or on your next road trip.
+  </p>
+  <footer class="learn-more">
+    <a href="#">Learn More</a>
+  </footer>
+  </div>
+
+  <div class="suvs">
+  <img src="images/icon-suvs.svg" alt="" class="suvs">
+  <h2>SUVs</h2>
+  <p>
+    Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+    and off-road adventures.
+  </p>
+  <footer class="learn-more">
+    <a href="#">Learn More</a>
+  </footer>
+  </div>
+
+  <div class="luxury">
+  <img src="images/icon-luxury.svg" alt="" class="luxury">
+  <h2>Luxury</h2>
+  <p>
+    Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+    rental and arrive in style.
+  </p>
+  <footer class="learn-more">
+    <a href="#">Learn More</a>
+  </footer>
+  </div>
+  </div>
+</body>
+</html>
